@@ -37,6 +37,10 @@ header .container {
     align-items: center;
 }
 
+.cell{
+    display: none;
+}
+
 .nome-dcg {
     font-size: 1.5em;
     font-weight: bold;
@@ -139,4 +143,112 @@ aside .noticia a{
     margin-top: 10px;
     font-size: 1em;
     text-shadow: 0 0 4px #00ffffaa;
+}
+
+.botao-menu{
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .conteudo{
+        display: block;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    header div.container{
+        flex-direction: column;
+    }
+
+    .menu-area {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .menu-area a{
+        text-decoration: none;
+        font-size: 0.8em;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .cell{
+        display: inline;
+    }
+
+    .destaque .noticia a{ 
+        display: block;
+        color: #ffffff;
+        text-shadow: 0 0 4px #00ffffaa;
+        font-size: 1em;
+        text-decoration: none;    
+    }   
+    
+    .destaque .noticia img{
+        margin-right: 0px;
+    }
+
+    .futuro{
+        display: block;
+        grid-template-columns: repeat(3, 32.6%);
+        column-gap: 1%;
+        row-gap: 5%;
+    }
+
+    .futuro .noticia{
+        margin-bottom: 32px;
+    }
+
+    aside{
+        padding-left: 0px;
+    }
+
+    header div.container{
+        flex-direction: column;
+    }
+    
+    .botao-menu {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+        border: 2px solid #00ffff;
+        
+    }
+
+    .botao-menu button{
+        padding: 8px;
+        color: #00ffff;
+        background-color: #8f00ff;
+    }
+
+    .botao-menu:hover{
+        box-shadow: 0 0 16px #00ffff88;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .conmtainer{
+        max-width: 90%;
+    }
+
+    .botao-menu{
+        display: none;
+    }
+
+    .destaque .noticia{
+        display: block;
+        font-size: 1em;
+    }
+
+    .futuro{
+        grid-template-columns: repeat(2, 49%);
+    }
 }
