@@ -92,8 +92,8 @@ header .container {
 
 .destaque{
     margin-bottom: 56px;
+    
 }
-
 
 .destaque .noticia a{ 
     display: flex;
@@ -105,6 +105,8 @@ header .container {
 }
 
 .destaque .noticia img{
+    width: 360px;
+    height: 360ox;
     margin-right: 8px;
 }
 
@@ -246,6 +248,10 @@ aside .noticia a{
     .destaque .noticia{
         display: block;
         font-size: 1em;
+    }
+    .destaque .noticia img{
+        width: 360px;
+        height: 360px;
     }
 
     .futuro{
