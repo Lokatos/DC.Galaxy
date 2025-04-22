@@ -91,8 +91,8 @@ header .container {
 }
 
 .destaque{
-    margin-bottom: 56px;
-    
+    margin-bottom: 56px;   
+    padding-top: 50px;
 }
 
 .destaque .noticia a{ 
@@ -106,22 +106,44 @@ header .container {
 
 .destaque .noticia img{
     width: 360px;
-    height: 360ox;
+    height: 360px;
     margin-right: 8px;
 }
+
+.destaque a img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;;
+    border-radius: 10px;
+    border: 3px solid #00ffff; 
+    box-shadow: 0 0 25px #00ffff, 0 0 50px #8f00ff;
+    transition: 0.3s;
+}
+
 
 section h2{
     margin-bottom: 32px;
     color: #00ffff;
     text-shadow: 0 0 8px #00ffffff;
+    font-size: 2.5em;
+    font-weight: bold;
 }
 
 aside{
     padding-left: 40px;
+    margin-top: 56px;
 }
 
 aside .noticia{
     margin-bottom: 24px;
+}
+
+aside .noticia img{
+    border-radius: 10px;
+    border: 3px solid #00ffff;
+    box-shadow: 0 0 20px #00ffff, 0 0 30px #8f00ff;
+    transition: 0.3s;
+    object-fit: cover;
 }
 
 aside .noticia a{
@@ -134,9 +156,19 @@ aside .noticia a{
 
 .futuro{
     display: grid;
-    grid-template-columns: repeat(3, 32.6%);
+    grid-template-columns: repeat(3, 32%);
     column-gap: 1%;
-    row-gap: 5%;
+}
+
+.futuro .noticia img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #00ffff;
+    box-shadow: 0 0 20px #00ffff, 0 0 30px #8f00ff;
+    transition: 0.3s;
+    object-fit: cover;
 }
 
 .futuro .noticia h3 {
@@ -145,6 +177,7 @@ aside .noticia a{
     margin-top: 10px;
     font-size: 1em;
     text-shadow: 0 0 4px #00ffffaa;
+    margin: 16px;
 }
 
 .botao-menu{
@@ -200,7 +233,6 @@ aside .noticia a{
 
     .futuro{
         display: block;
-        grid-template-columns: repeat(3, 32.6%);
         column-gap: 1%;
         row-gap: 5%;
     }
@@ -208,9 +240,18 @@ aside .noticia a{
     .futuro .noticia{
         margin-bottom: 32px;
     }
-
+    
     aside{
         padding-left: 0px;
+    }
+
+    aside .noticia a h3{
+        padding: 15px;
+        margin-top: 5px;
+    }
+
+    aside .noticia {
+        margin-bottom: 0;
     }
 
     header div.container{
@@ -237,7 +278,7 @@ aside .noticia a{
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .conmtainer{
+    .container{
         max-width: 90%;
     }
 
