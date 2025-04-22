@@ -156,7 +156,7 @@ aside .noticia a{
 
 .futuro{
     display: grid;
-    grid-template-columns: repeat(3, 32%);
+    grid-template-columns: repeat(4, 24.25%);
     column-gap: 1%;
 }
 
